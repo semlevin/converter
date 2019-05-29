@@ -5,7 +5,7 @@
 
 int main()
 {
-	int arg1;
+
 	char bin[6];
 
 
@@ -13,9 +13,24 @@ int main()
 
 	switch (arg1)
 	{
-		case 0:
-			(bin, "0000");
-	
+	case 0:
+		(bin, "0000b");
+		break;
+
+	case 1:
+		(bin, "0001b");
+		break;
+
+	case 2:
+		(bin, "0010b");
+		break;
+
+	case 3:
+		(bin, "0011b");
+		break;
+
+
+
 
 
 

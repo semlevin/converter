@@ -7,12 +7,11 @@ int main()
 {
 	int arg1;
 	char bin[6];
-	
+
+again:
+
 	printf(" hex ");
 	scanf_s ("%x", &arg1);
-	
-
-
 
 	switch (arg1)
 	{
@@ -82,6 +81,8 @@ int main()
 	}
 	printf("\n%s", bin);
 	
-
+	if (arg1 == 0x0A)
+		return 0;
+	goto again;
 
 }

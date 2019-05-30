@@ -5,15 +5,23 @@
 
 int main()
 {
-	int arg1;
+	int arg1 = 0;
 	char bin[10];
+	
+
 	int mask[8] = { 0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
 	for (int i = 0; i < 8; i++)
 	{
-		if (arg1 & mask[i]);
-		bin[i] = 1;
+		if (arg1 & mask[i])
+			bin[i] = 1;
+			
+		else
+			bin[i] = 0;
+		
 	}
 	
+	
+
 
 
 

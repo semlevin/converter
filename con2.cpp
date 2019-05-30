@@ -7,8 +7,22 @@ int main()
 {
 	int arg1;
 	char bin[10];
+	int mask[8] = { 0x80, 0x40, 0x20, 0x10, 0x08, 0x04, 0x02, 0x01 };
+	for (int i = 0; i < 8; i++)
+	{
+		if (arg1 & mask[i]);
+		bin[i] = 1;
+	}
+	
 
-again:
+
+
+
+
+
+	/*char bin[10];
+
+	again:
 
 	printf(" hex ");
 	scanf_s ("%x", &arg1);
@@ -64,7 +78,7 @@ again:
 	bin[8] = 'b';
 	bin[9] = 0;
 
-	/*switch (arg1)
+	switch (arg1)
 	{
 	case 0:
 		strcpy_s(bin, "0000b");
@@ -129,13 +143,14 @@ again:
 	case 0x0F:
 		strcpy_s(bin, "1111");
 		break;
-	}*/
+	}
+
 
 	printf("\n%s\n", bin);
 	
 	if (arg1 == 0x0A)
 		return 0;
 
-	goto again;
+	goto again; */
 
 }
